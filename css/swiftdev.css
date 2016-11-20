@@ -113,6 +113,30 @@ form.subscribe {
     border-right: 1px solid #ccc;
     }
 
+body.artikel {
+	line-height: 1.8;
+	}
+
+body.artikel p img {
+	border-radius: 4px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+
+	-webkit-box-shadow: 6px 6px 13px -1px rgba(189,189,189,1);
+	-moz-box-shadow: 6px 6px 13px -1px rgba(189,189,189,1);
+	box-shadow: 6px 6px 13px -1px rgba(189,189,189,1);
+	}
+
+.col-center {
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
+	}
+	
+body.artikel .col-center {
+	max-width: 25em;
+	}
+
 @media (min-width: @screen-md-min) {            
 .squeeze-left {
     padding: 0 1em 0 0;
