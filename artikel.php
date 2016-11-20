@@ -2,6 +2,11 @@
 // Kijk vanuit welke directory we ge-included werden, en lees daar de artikel-tekst.
 $includer = get_included_files()[0];
 $contentfn = str_replace("/index.php", "/content.html", $includer);
+// Sta alleen content uit .html files toe.
+if (substr($contentfn, -5) != '.html') {
+	header("Location: /");
+	exit();
+	}
 $content = file_get_contents($contentfn);
 $lines = explode("\n", $content);
 
