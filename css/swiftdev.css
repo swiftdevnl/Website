@@ -134,7 +134,7 @@ body.artikel p img {
 	}
 	
 body.artikel .col-center {
-	max-width: 25em;
+	max-width: 30em;
 	}
 
 @media (min-width: @screen-md-min) {            
