@@ -1,0 +1,130 @@
+
+body, .form-control, .btn-default  {
+	background-color: #FDFDF9;
+	}
+
+h1.logo {
+	display: none;
+	}
+
+h2 {
+	}
+
+h2.hidden {
+	display: none;
+	}
+
+h3 {
+	}
+    
+p.center {
+	text-align: center;
+	}
+
+.right {
+	float: right;
+	}
+
+.breathe {
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+	}
+    
+.sigh {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	}
+    
+.sigh-above {
+	padding-top: 1em;
+	}
+    
+.gasp {
+	padding-top: 2em;
+	padding-bottom: 1em;
+	}
+
+td.old {
+	width: 50%;
+	color: #cc0000;
+	}
+
+td.new {
+	width: 50%;
+	color: #008800;
+	}
+
+th {
+	font-weight: normal;
+	font-size: 80%;
+	text-decoration: italic;
+	}
+    
+code.gray {
+	color: white;
+	background-color: #888;
+	}
+
+pre {
+	overflow: scroll;
+	}
+
+
+
+            
+ul.unindented {
+    list-style-position: inside;
+    padding-left: 0;
+    }
+
+ul.unindented li {
+    padding-left: 0;
+    margin-bottom: 0.3em;
+    }
+
+ul.unindented li:before {
+    padding-right: 0.2em;
+    }
+
+
+ul.indented {
+    /* list-style: none; */
+    list-style-position: inside;
+    padding-left: 0.5em;
+    }
+
+ul.indented li {
+    padding-left: 0;
+    margin-bottom: 0.3em;
+    }
+
+ul.indented li:before {
+    /* content: "☞"; */
+    padding-right: 0.5em;
+    }
+    
+
+form.subscribe {
+    padding: 0.4em 1em 0.6em 1em;
+    }
+    
+.vdivider {
+    padding-right: 20px;
+    border-right: 1px solid #ccc;
+    }
+
+@media (min-width: @screen-md-min) {            
+.squeeze-left {
+    padding: 0 1em 0 0;
+    }
+
+.squeeze-middle {
+    padding: 0 1em 0 1em;
+    }
+.squeeze-right {
+    padding: 0 0 0 1em;
+    }
+}
+   
+
+
