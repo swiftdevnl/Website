@@ -8,6 +8,7 @@
     <title><?= $metatitle ?></title>
     <meta name="keywords" content="<?= $metakeywords ?>" />
     <meta name="description" content="<?= $metadescription ?>" />
+    <meta name="author" content="<?= $metaauthor ?>" />
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/swiftdev.css">
 	<link rel="shortcut icon" href="../img/favicon.png">    

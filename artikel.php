@@ -11,7 +11,7 @@ $content = file_get_contents($contentfn);
 $lines = explode("\n", $content);
 
 // Haal er de meta-data uit.
-$metatitle = $metadescription = $metakeywords = "";
+$metatitle = $metadescription = $metakeywords = $metaauthor = "";
 
 foreach ($lines as $line) {
 	$line = trim($line);
@@ -25,6 +25,10 @@ foreach ($lines as $line) {
 		}
 	else if (substr($line, 0, 14) == "meta-keywords:") {
 		$metakeywords = trim(substr($line, 15));
+		continue;
+		}
+	if (substr($line, 0, 12) == "meta-author:") {
+		$metaauthor = trim(substr($line, 13));
 		continue;
 		}
 	else if (substr($line, 0, 4) == "-->")
