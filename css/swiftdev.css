@@ -68,9 +68,6 @@ code.gray {
 pre {
 	overflow: scroll;
 	}
-
-
-
             
 ul.unindented {
     list-style-position: inside;
@@ -137,18 +134,16 @@ body.artikel .col-center {
 	max-width: 30em;
 	}
 
-@media (min-width: @screen-md-min) {            
-.squeeze-left {
-    padding: 0 1em 0 0;
-    }
+@media (min-width: 992px) {            
+	.squeeze-left {
+	    padding: 0 1em 0 0;
+	    }
 
-.squeeze-middle {
-    padding: 0 1em 0 1em;
-    }
-.squeeze-right {
-    padding: 0 0 0 1em;
-    }
+	.squeeze-middle {
+	    padding: 0 1em 0 1em;
+	    }
+	
+	.squeeze-right {
+	    padding: 0 0 0 1em;
+	    }
 }
-   
-
-
