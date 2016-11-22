@@ -1,8 +1,9 @@
 <?php
+require_once("../config.php");
 
 $user = $_SERVER['PHP_AUTH_USER'];
 $password = $_SERVER['PHP_AUTH_PW'];
-$validated = ($user == "meer" && $password == "bier");
+$validated = ($user == $admin_agenda_username && $password == $admin_agenda_password);
 
 if (!$validated) {
 	header('WWW-Authenticate: Basic realm="Swiftdev.nl Agenda beheer"');
@@ -92,7 +93,7 @@ if (array_key_exists("submit",$_POST)) {
 				<p>Punt 3 <input name="maandagpunt3" type="text" size="30" value="<?= $agenda->maandagpunt3 ?>"></p>
 				
 				<p><input name="submit" type="Submit" value="  Bewaar  "></p>
-				<?php if ($agenda->submit != "") echo("<p>Gegevens zijn opgeslagen. Naar <a href=\"/\">home</a>.</p>"); ?>
+				<?php if ($agenda->submit != "") echo("<p>Gegevens zijn opgeslagen. Naar <a href=\"/\">home</a> om resultaat te bekijken.</p>"); ?>
 			</form>
 		</div>
 	</div>
