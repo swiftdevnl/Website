@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+<?php
+
+// Haal bestaande agendapunten, indien die aanwezig zijn.
+$jsonfilename = "config/agenda.json";
+$agenda = new stdClass();
+if (file_exists($jsonfilename)) {
+	$agenda = json_decode(file_get_contents($jsonfilename));
+	}
+
+?><!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="utf-8">
@@ -59,15 +68,17 @@
             <div class="col-md-4">
                 <div class="squeeze-right">
                     <h2>Agenda</h2>
-                    <p>Komende zondag, 20 nov 14:00, <a href="https://zoom.us/j/456434309" title="Live coding sessie">zoom &rarr;</a></p>
+                    <p>Zondag <?php if (!empty($agenda->zondagdatum)) echo($agenda->zondagdatum); ?> 14:00, <a href="https://zoom.us/j/456434309" title="Live coding sessie">zoom &rarr;</a></p>
                     <ul class="indented">
-                        <li>Camera foto's maken vanuit je app</li>
-                        <li>Foto's verkleinen met Swift</li>
+						<?php if (!empty($agenda->zondagpunt1)) echo("<li>".$agenda->zondagpunt1."</li>"); ?>
+						<?php if (!empty($agenda->zondagpunt2)) echo("<li>".$agenda->zondagpunt2."</li>"); ?>
+						<?php if (!empty($agenda->zondagpunt3)) echo("<li>".$agenda->zondagpunt3."</li>"); ?>
                     </ul>
-                    <p>Komende woensdag, 30 nov 19:30, <a href="https://zoom.us/j/245766538" title="Hangout">zoom &rarr;</a></p>
+                    <p>Woensdag, <?php if (!empty($agenda->maandagdatum)) echo($agenda->maandagdatum); ?> 19:30, <a href="https://zoom.us/j/245766538" title="Hangout">zoom &rarr;</a></p>
                     <ul class="indented">
-                        <li>Data-opslag buiten je app</li>
-                        <li>Slimme Willy</li>
+ 						<?php if (!empty($agenda->maandagpunt1)) echo("<li>".$agenda->maandagpunt1."</li>"); ?>
+						<?php if (!empty($agenda->maandagpunt2)) echo("<li>".$agenda->maandagpunt2."</li>"); ?>
+						<?php if (!empty($agenda->maandagpunt3)) echo("<li>".$agenda->maandagpunt3."</li>"); ?>
                     </ul>
                 </div>
             </div>
