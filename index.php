@@ -1,7 +1,7 @@
 <?php
 
 // Haal bestaande agendapunten, indien die aanwezig zijn.
-$jsonfilename = "config/agenda.json";
+$jsonfilename = "state/agenda.json";
 $agenda = new stdClass();
 if (file_exists($jsonfilename)) {
 	$agenda = json_decode(file_get_contents($jsonfilename));
