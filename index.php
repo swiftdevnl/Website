@@ -74,11 +74,11 @@ if (file_exists($jsonfilename)) {
 						<?php if (!empty($agenda->zondagpunt2)) echo("<li>".$agenda->zondagpunt2."</li>"); ?>
 						<?php if (!empty($agenda->zondagpunt3)) echo("<li>".$agenda->zondagpunt3."</li>"); ?>
                     </ul>
-                    <p>Woensdag <?php if (!empty($agenda->maandagdatum)) echo($agenda->maandagdatum); ?> 19:30, <a href="https://zoom.us/j/245766538" title="Hangout">zoom &rarr;</a></p>
+                    <p>Woensdag <?php if (!empty($agenda->woensdagdatum)) echo($agenda->woensdagdatum); ?> 19:30, <a href="https://zoom.us/j/245766538" title="Hangout">zoom &rarr;</a></p>
                     <ul class="indented">
- 						<?php if (!empty($agenda->maandagpunt1)) echo("<li>".$agenda->maandagpunt1."</li>"); ?>
-						<?php if (!empty($agenda->maandagpunt2)) echo("<li>".$agenda->maandagpunt2."</li>"); ?>
-						<?php if (!empty($agenda->maandagpunt3)) echo("<li>".$agenda->maandagpunt3."</li>"); ?>
+ 						<?php if (!empty($agenda->woensdagpunt1)) echo("<li>".$agenda->woensdagpunt1."</li>"); ?>
+						<?php if (!empty($agenda->woensdagpunt2)) echo("<li>".$agenda->woensdagpunt2."</li>"); ?>
+						<?php if (!empty($agenda->woensdagpunt3)) echo("<li>".$agenda->woensdagpunt3."</li>"); ?>
                     </ul>
                 </div>
             </div>

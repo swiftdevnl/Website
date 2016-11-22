@@ -19,10 +19,10 @@ $agenda->zondagdatum = "";
 $agenda->zondagpunt1 = "";
 $agenda->zondagpunt2 = "";
 $agenda->zondagpunt3 = "";
-$agenda->maandagdatum = "";
-$agenda->maandagpunt1 = "";
-$agenda->maandagpunt2 = "";
-$agenda->maandagpunt3 = "";
+$agenda->woensdagdatum = "";
+$agenda->woensdagpunt1 = "";
+$agenda->woensdagpunt2 = "";
+$agenda->woensdagpunt3 = "";
 $agenda->submit = "";
 
 // Haal bestaande agendapunten, indien die aanwezig zijn.
@@ -39,10 +39,10 @@ if (array_key_exists("submit",$_POST)) {
 	$agenda->zondagpunt1 = trim($_POST["zondagpunt1"]);
 	$agenda->zondagpunt2 = trim($_POST["zondagpunt2"]);
 	$agenda->zondagpunt3 = trim($_POST["zondagpunt3"]);
-	$agenda->maandagdatum = trim($_POST["maandagdatum"]);
-	$agenda->maandagpunt1 = trim($_POST["maandagpunt1"]);
-	$agenda->maandagpunt2 = trim($_POST["maandagpunt2"]);
-	$agenda->maandagpunt3 = trim($_POST["maandagpunt3"]);
+	$agenda->woensdagdatum = trim($_POST["woensdagdatum"]);
+	$agenda->woensdagpunt1 = trim($_POST["woensdagpunt1"]);
+	$agenda->woensdagpunt2 = trim($_POST["woensdagpunt2"]);
+	$agenda->woensdagpunt3 = trim($_POST["woensdagpunt3"]);
 	$agenda->submit = trim($_POST["submit"]);
 
 	if (file_put_contents($jsonfilename, $json = json_encode($agenda, JSON_PRETTY_PRINT)) === FALSE) {
@@ -86,11 +86,11 @@ if (array_key_exists("submit",$_POST)) {
 				<p>Punt 2 <input name="zondagpunt2" type="text" size="30" value="<?= $agenda->zondagpunt2 ?>"></p>
 				<p>Punt 3 <input name="zondagpunt3" type="text" size="30" value="<?= $agenda->zondagpunt3 ?>"></p>
 
-				<h3>Maandagavond hangout</h3>
-				<p>Datum <input name="maandagdatum" type="text" size="10" placeholder="3 dec" value="<?= $agenda->maandagdatum ?>"></p>
-				<p>Punt 1 <input name="maandagpunt1" type="text" size="30" value="<?= $agenda->maandagpunt1 ?>"></p>
-				<p>Punt 2 <input name="maandagpunt2" type="text" size="30" value="<?= $agenda->maandagpunt2 ?>"></p>
-				<p>Punt 3 <input name="maandagpunt3" type="text" size="30" value="<?= $agenda->maandagpunt3 ?>"></p>
+				<h3>Woensdagavond hangout</h3>
+				<p>Datum <input name="woensdagdatum" type="text" size="10" placeholder="3 dec" value="<?= $agenda->woensdagdatum ?>"></p>
+				<p>Punt 1 <input name="woensdagpunt1" type="text" size="30" value="<?= $agenda->woensdagpunt1 ?>"></p>
+				<p>Punt 2 <input name="woensdagpunt2" type="text" size="30" value="<?= $agenda->woensdagpunt2 ?>"></p>
+				<p>Punt 3 <input name="woensdagpunt3" type="text" size="30" value="<?= $agenda->woensdagpunt3 ?>"></p>
 				
 				<p><input name="submit" type="Submit" value="  Bewaar  "></p>
 				<?php if ($agenda->submit != "") echo("<p>Gegevens zijn opgeslagen. Naar <a href=\"/\">home</a> om resultaat te bekijken.</p>"); ?>
