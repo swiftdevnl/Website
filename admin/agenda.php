@@ -12,8 +12,6 @@ if (!$validated) {
 	}
 
 // Haal bestaande settings
-$agenda = (object)array("naam"=>"Jan", "age"=>25);
-
 $agenda = new stdClass();
 $agenda->zondagdatum = "";
 $agenda->zondagpunt1 = "";
