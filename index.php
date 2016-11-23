@@ -50,7 +50,7 @@ if (file_exists($jsonfilename)) {
                     <ul class="unindented">
                     <li>Elke zondagmiddag live coding sessie</li>
                     <li>Tweewekelijks woensdagavond hangout</li>
-                    <li><a href="#">Bekijk videos</a> van vorige hangouts</li>
+                    <li><a href="artikels/videos">Bekijk videos</a> van vorige hangouts</li>
                     <li>Blijf op de hoogte via email:</li>
                     </ul>
                     <form class="subscribe" method="post" action="/emailregistratie" accept-charset="utf-8">
@@ -104,12 +104,10 @@ if (file_exists($jsonfilename)) {
             <div class="col-md-4">
                 <div class="squeeze-middle">
                     <h2>Apps van leden</h2>
-                    <!-- <a href="#"><img class="img-responsive img-rounded" src="img/iphone-320x180.png"></a> -->
                     <p>Een aantal leden hebben apps gemaakt die ondertussen in de AppStore staan.</p>
-                    <p><a href="#">Tip Calculator</a> van Hans TH</p>
-                    <p><a href="#">Quote Spin</a> van Pieter Velghe</p>
-                    <p><a href="#">LogSave</a> van Jan Pollaert</p>
-                    <p><a href="#">Horse Ranking</a> van Michel Kapelle</p>
+                    <p><a href="artikels/quotespin">Quote Spin</a> van Pieter Velghe</p>
+                    <p><a href="artikels/logsave">LogSave</a> van Jan Pollaert</p>
+                    <p><a href="artikels/horseranking">Horse Ranking</a> van Michel Kapelle</p>
                 </div>
             </div>
 
@@ -119,22 +117,22 @@ if (file_exists($jsonfilename)) {
                     <p>
                         Wil jij in het Nederlands met Swift ook iOS apps leren programmeren,
                         apps ontwerpen of samen met anderen apps ontwikkelen?
-                        <a href="over">Lees dan verder&hellip;</a>
+                        <a href="artikels/over">Lees dan verder&hellip;</a>
                     </p>
                     
                     <p>
                         Voor wie kennis wil maken met Swift, app-ontwikkeling en andere leden bezoekt wekelijks
                         onze <em>online meetings</em>. We gaan samen aan de slag, wisselen ideeën uit, beantwoorden vragen,
                         bespreken gezamenlijke projecten én geven uitleg over interessante onderwerpen.
-                        <a href="meetings.html">Lees meer&hellip;</a>
+                        <a href="artikels/meetings">Lees meer&hellip;</a>
                     </p>
                 
                     <p>
                         Een systeem om artikelen toe te voegen zonder een CMS te hoeven gebruiken.
-                        <a href="skelet">Lees meer&hellip;</a>
+                        <a href="artikels/skelet">Lees meer&hellip;</a>
                     </p>
                 
-                    <p><a href="artikeloverzicht">meer artikels&hellip;</a>
+                    <p><a href="artikels/overzicht">meer artikels&hellip;</a>
                 </div>
             </div>
         </div><!-- .row -->

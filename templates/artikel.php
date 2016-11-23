@@ -9,9 +9,9 @@
     <meta name="keywords" content="<?= $metakeywords ?>" />
     <meta name="description" content="<?= $metadescription ?>" />
     <meta name="author" content="<?= $metaauthor ?>" />
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/swiftdev.css">
-	<link rel="shortcut icon" href="../img/favicon.png">    
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/swiftdev.css">
+	<link rel="shortcut icon" href="../../img/favicon.png">    
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -24,9 +24,9 @@
     <div class="container">
         <div class="row">
             <div class="col-center">
-            	<h1><a href="/"><img src="../img/logo75.png" alt="SwiftDev.nl" /></a></h1>
+            	<h1><a href="/"><img src="../../img/logo75.png" alt="<?= $contenttitle ?>" /></a></h1>
 				<?= $content ?>
-				<p><a href="..">&larr; terug</a></p>
+				<p><a href="/">&larr; terug</a></p>
             </div>
         </div>
         

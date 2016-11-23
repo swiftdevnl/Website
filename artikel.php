@@ -12,6 +12,7 @@ $lines = explode("\n", $content);
 
 // Haal er de meta-data uit.
 $metatitle = $metadescription = $metakeywords = $metaauthor = "";
+$contenttitle = "SwiftDev.nl";
 
 foreach ($lines as $line) {
 	$line = trim($line);
@@ -27,8 +28,12 @@ foreach ($lines as $line) {
 		$metakeywords = trim(substr($line, 15));
 		continue;
 		}
-	if (substr($line, 0, 12) == "meta-author:") {
+	else if (substr($line, 0, 12) == "meta-author:") {
 		$metaauthor = trim(substr($line, 13));
+		continue;
+		}
+	else if (substr($line, 0, 14) == "content-title:") {
+		$contenttitle = trim(substr($line, 15));
 		continue;
 		}
 	else if (substr($line, 0, 4) == "-->")
