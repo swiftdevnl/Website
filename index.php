@@ -53,11 +53,11 @@ if (file_exists($jsonfilename)) {
                     <li><a href="artikels/videos">Bekijk videos</a> van vorige hangouts</li>
                     <li>Blijf op de hoogte via email:</li>
                     </ul>
-                    <form class="subscribe" method="post" action="/emailregistratie" accept-charset="utf-8">
+                    <form class="subscribe" method="post" action="abonneer.php" accept-charset="utf-8">
                         <div class="input-group">
                             <input type="email" class="form-control" id="email" name="email" placeholder="jouw email adres">
                             <span class="input-group-btn">
-                                <button class="btn btn-default" type="button"> abonneer </button>
+                                <button class="btn btn-default" type="submit"> abonneer </button>
                             </span>
                         </div><!-- /input-group -->
                     

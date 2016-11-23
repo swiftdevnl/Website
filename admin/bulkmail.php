@@ -11,9 +11,9 @@ if (!$validated) {
 	die("Not authorized");
 	}
 
-// Haal bestaande agendapunten, indien die aanwezig zijn.
+// Haal abonnees, indien die aanwezig zijn.
 $jsonfilename = "../state/abonnees.json";
-$abonnees = new stdClass();
+$abonnees = array();
 if (file_exists($jsonfilename)) {
 	$abonnees = json_decode(file_get_contents($jsonfilename));
 	// [ip] => 93.73.134.68 [unsubscribekey] => nPUoOazByMyohqzS [email] => harry.disseldorp@gmail.com [subscribedate] => 2016-11-16 ) [1] 
