@@ -37,4 +37,5 @@ else {
 	}
 
 // Gebruik de artikel template voor een bevestigingspagina.
+$metatitle = $metadescription = $metakeywords = $metaauthor = $contenttitle = "";
 include("templates/artikel.php");

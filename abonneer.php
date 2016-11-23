@@ -29,13 +29,6 @@ function randomkey() {
 	return $key;
 	}
 
-// echo randomkey();
-// echo userip();
-// echo empty("Hello");
-// echo empty($nonexist);
-// echo empty("");
-// echo json_encode(array("Boeh"=>FALSE,"Baah"=>TRUE));
-
 // Haal abonnees, indien die aanwezig zijn.
 $jsonfilename = "state/abonnees.json";
 $abonnees = array();
@@ -73,4 +66,5 @@ else {
 	}
 
 // Gebruik de artikel template voor een bevestigingspagina.
+$metatitle = $metadescription = $metakeywords = $metaauthor = $contenttitle = "";
 include("templates/artikel.php");
