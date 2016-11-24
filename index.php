@@ -85,7 +85,7 @@ $linkfeed = array_slice($linkfeed, 0, 6);
                     </ul>
                     <form class="subscribe" method="post" action="abonneer.php" accept-charset="utf-8">
                         <div class="input-group">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="jouw email adres">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="jouw email adres" required>
                             <span class="input-group-btn">
                                 <button class="btn btn-default" type="submit"> abonneer </button>
                             </span>

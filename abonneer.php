@@ -1,10 +1,10 @@
 <?php
+require_once("config.php");
+date_default_timezone_set("Europe/Amsterdam");
 
 // Script om abonnement te nemen:  http://www.swiftdev.nl/abonneer.php (met in POST: email=motoom@xs4all.nl
 
 // TODO: ReCAPTCHA gebruiken.
-
-date_default_timezone_set("Europe/Amsterdam");
 
 function userip()
 {
@@ -63,6 +63,10 @@ else {
 		die("Configuratiefout: het script heeft geen schrijftoegang tot de schijf. Neem contact op met de programmeur.");
 		}
 	$content = "<h1>Bedankt</h1><p>Dankjewel voor het abonneren.</p>";
+	
+	$log = date("Y-m-d H:i:s")." ".$abonnee->ip." geabonneerd ".$abonnee->email;
+ 	@file_put_contents("state/abonnees.log", $log.PHP_EOL, FILE_APPEND|LOCK_EX);
+	@mail($administrator_email, "SwiftDev.nl abonnement", $log, "From: admin@swiftdev.nl");
 	}
 
 // Gebruik de artikel template voor een bevestigingspagina.

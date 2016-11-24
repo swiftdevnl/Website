@@ -14,3 +14,5 @@ Specificeer de volgende variabelen in 'config.php':
 
     $admin_bulkmail_username = "...";
     $admin_bulkmail_password = "...";
+
+	$administrator_email = "...";
