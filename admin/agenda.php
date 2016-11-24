@@ -23,7 +23,6 @@ $agenda->woensdagpunt2 = "";
 $agenda->woensdagpunt3 = "";
 $agenda->submit = "";
 
-// Haal bestaande agendapunten, indien die aanwezig zijn.
 $jsonfilename = "../state/agenda.json";
 if (file_exists($jsonfilename)) {
 	$agenda = json_decode(file_get_contents($jsonfilename));

@@ -16,7 +16,7 @@ $jsonfilename = "../state/abonnees.json";
 $abonnees = array();
 if (file_exists($jsonfilename)) {
 	$abonnees = json_decode(file_get_contents($jsonfilename));
-	// [ip] => 93.73.134.68 [unsubscribekey] => nPUoOazByMyohqzS [email] => harry.disseldorp@gmail.com [subscribedate] => 2016-11-16 ) [1] 
+	// [ip] => 93.73.134.68 [unsubscribekey] => nPUoOazByMyohqzS [email] => motoom@xs4all.nl [subscribedate] => 2016-11-16 ) [1] 
 	}
 
 // Als het een POST is, verwerk dan het form.

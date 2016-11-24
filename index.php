@@ -1,11 +1,41 @@
 <?php
 
+date_default_timezone_set("Europe/Amsterdam");
+
 // Haal bestaande agendapunten, indien die aanwezig zijn.
-$jsonfilename = "state/agenda.json";
-$agenda = new stdClass();
-if (file_exists($jsonfilename)) {
-	$agenda = json_decode(file_get_contents($jsonfilename));
+$agendafilename = "state/agenda.json";
+$agenda = array();
+if (file_exists($agendafilename)) {
+	$agenda = json_decode(file_get_contents($agendafilename));
 	}
+
+// En de linkfeed.
+$linkfeedfilename = "state/linkfeed.json";
+$linkfeed = array();
+if (file_exists($linkfeedfilename)) {
+	$linkfeed = json_decode(file_get_contents($linkfeedfilename));
+	}
+
+// Wegfilteren wat in de toekomst gepubliceerd moet worden.
+$horizon = date("Y-m-d");
+
+function pubdatefilter($a) {
+	global $horizon;
+	return $a->publicatiedatum <= $horizon;
+	}
+	
+$linkfeed = array_filter($linkfeed, "pubdatefilter");
+
+// Sorteer op dalende publicatiedatum
+function pubdatecmp($a, $b) {
+	return strcmp($b->publicatiedatum, $a->publicatiedatum);
+	}
+
+usort($linkfeed, "pubdatecmp");
+
+// Alleen de 6 meest recente entries.
+$linkfeed = array_slice($linkfeed, 0, 6);
+
 
 ?><!DOCTYPE html>
 <html lang="nl">
@@ -89,13 +119,12 @@ if (file_exists($jsonfilename)) {
                 <div class="squeeze-left">
                     <h2>Link feed</h2>
                     <p>Interessante internationale artikelen en blogpostings, verzameld door Digitist.</p>
-                    <ul class="unindented">                        
-                        <li>Bouw <a date="2016-11-02" href="https://www.raywenderlich.com/140836/firebase-tutorial-real-time-chat-2">realtime chat</a> in je app met FireBase</li>
-                        <li>Met SpriteKit een zg. <a date="2016-11-02" href="https://www.raywenderlich.com/143258/make-waiting-game-like-farmville-spritekit-swift">'Waiting Game'</a> maken</li>
-                        <li>De <a date="2016-11-02" href="https://github.com/raywenderlich/swift-algorithm-club">Swift Algorithm Club</a> bevat allerlei algorithmen in Swift playgrounds</li>
-                        <li>Matt Heaney is begonnen met een <a href="https://www.youtube.com/playlist?list=PLrL5aCF7Ods-bmw86QdMT4B8FPhD7D99P">serie tutorials over Swift 3</a> gericht op beginners</li>
-                        <li><a href="https://medium.com/ios-os-x-development/xcode-a-better-way-to-deal-with-storyboards-8b6a8b504c06#.p7r31tml3">Hoe om te gaan met Story Boards</a>, size classes etc.</li>
-                        <li>Een mooi overzicht van <a href="http://www.globalnerdy.com/2015/03/02/microsofts-swiftc-cheat-sheet/">Swift &amp; C#</a> commando's</li>
+                    <ul class="unindented">
+					    <?php
+						foreach($linkfeed as $link) {
+                            echo "<li>$link->titel <a date=\"$link->publicatiedatum\" href=\"$link->url\" target=\"_blank\">lees&hellip;</a></li>";
+							}
+						?>
                     </ul>
                     <p><a href="#">meer&hellip;</a></p>
                 </div>
