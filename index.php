@@ -155,12 +155,7 @@ $linkfeed = array_slice($linkfeed, 0, 6);
                         bespreken gezamenlijke projecten én geven uitleg over interessante onderwerpen.
                         <a href="artikels/meetings">Lees meer&hellip;</a>
                     </p>
-                
-                    <p>
-                        Een systeem om artikelen toe te voegen zonder een CMS te hoeven gebruiken.
-                        <a href="artikels/skelet">Lees meer&hellip;</a>
-                    </p>
-                
+
                     <p><a href="artikels/overzicht">meer artikels&hellip;</a>
                 </div>
             </div>
