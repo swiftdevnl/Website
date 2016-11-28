@@ -152,9 +152,9 @@ $linkfeed = array_slice($linkfeed, 0, 6);
                     
                     <p>
                         Voor wie kennis wil maken met Swift, app-ontwikkeling en andere leden bezoekt wekelijks
-                        onze <em>online meetings</em>. We gaan samen aan de slag, wisselen ideeën uit, beantwoorden vragen,
-                        bespreken gezamenlijke projecten én geven uitleg over interessante onderwerpen.
-                        <a href="artikels/meetings">Lees meer&hellip;</a>
+                        onze <em>online meetings</em>.
+						Elke week zondagmiddag is er in principe een <a href="artikels/live-coding">Live coding</a> sessie,
+						en elke twee weken een <a href="artikels/hangouts">Hangout</a> op woensdagavond.
                     </p>
 
                     <p><a href="artikels/overzicht">meer artikels&hellip;</a>
