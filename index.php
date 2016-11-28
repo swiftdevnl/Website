@@ -46,7 +46,7 @@ $linkfeed = array_slice($linkfeed, 0, 6);
     <!-- De bovenstaande drie metatags moeten persé boven dit commentaar staan, andere tags hieronder -->
     <title>SwiftDev.nl - Nederlandstalige community van iOS ontwikkelaars</title>
     <meta name="keywords" content="iOS, apps, iPhone, iPad, Nederlandstalig, swift, programmeren, app maken, tutorial, handleiding, leren" />
-    <meta name="description" content="TODO: Beschrijving in 130 tot 150 tekens" />
+    <meta name="description" content="SwiftDev.nl is een Nederlandstalige community van iOS ontwikkelaars die elkaar helpen met het maken van apps voor iPhone en iPad." />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/swiftdev.css">
 	<link rel="shortcut icon" href="img/favicon.png">    
@@ -137,6 +137,7 @@ $linkfeed = array_slice($linkfeed, 0, 6);
                     <p><a href="artikels/quotespin">Quote Spin</a> van Pieter Velghe</p>
                     <p><a href="artikels/logsave">LogSave</a> van Jan Pollaert</p>
                     <p><a href="artikels/horseranking">Horse Ranking</a> van Michel Kapelle</p>
+					<p><a href="/admin">admin...</a>
                 </div>
             </div>
 
