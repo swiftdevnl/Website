@@ -33,8 +33,8 @@ function pubdatecmp($a, $b) {
 
 usort($linkfeed, "pubdatecmp");
 
-// Alleen de 6 meest recente entries.
-$linkfeed = array_slice($linkfeed, 0, 6);
+// Alleen de X meest recente entries.
+$linkfeed = array_slice($linkfeed, 0, 5);
 
 
 ?><!DOCTYPE html>
@@ -126,7 +126,7 @@ $linkfeed = array_slice($linkfeed, 0, 6);
 							}
 						?>
                     </ul>
-                    <p><a href="#">meer&hellip;</a></p>
+                    <!-- <p><a href="#">meer&hellip;</a></p> -->
                 </div>
             </div>
 
