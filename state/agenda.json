@@ -1,11 +1,11 @@
 {
-    "zondagdatum": "27 nov",
-    "zondagpunt1": "Camera foto's maken vanuit je app",
-    "zondagpunt2": "Foto's verkleinen met Swift",
+    "zondagdatum": "4 dec",
+    "zondagpunt1": "Ad-hoc aangebrachte onderwerpen",
+    "zondagpunt2": "Relationeel databaseontwerp",
     "zondagpunt3": "",
     "woensdagdatum": "30 nov",
-    "woensdagpunt1": "Data-opslag buiten je app",
-    "woensdagpunt2": "Webview in je app voor tekst met plaatjes en links",
-    "woensdagpunt3": "",
+    "woensdagpunt1": "SizeClasses in Xcode8",
+    "woensdagpunt2": "HTML files in je app-bundle tonen in Webview, incl. plaatjes en links",
+    "woensdagpunt3": "Welke files zitten er in de app bundle?",
     "submit": "Bewaar"
 }
