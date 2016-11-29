@@ -126,7 +126,7 @@ $linkfeed = array_slice($linkfeed, 0, 5);
 							}
 						?>
                     </ul>
-                    <!-- <p><a href="#">meer&hellip;</a></p> -->
+                    <p><a href="linkfeed.php">meer&hellip;</a></p>
                 </div>
             </div>
 
