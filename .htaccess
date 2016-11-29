@@ -1,5 +1,7 @@
 
+php_value auto_prepend_file none
+
 <Files *.json>
- order allow,deny
- deny from all
+    order allow,deny
+    deny from all
 </Files>

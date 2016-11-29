@@ -69,7 +69,7 @@ $linkfeed = array_slice($linkfeed, 0, 5);
                 <div class="squeeze-left">
                     <h2>SwiftDev.nl</h2>
                     <p>...is een <em>online Nederlandstalige community</em> van personen die iOS apps willen maken, en dat samen doen is gezelliger!</p>
-                    <p class="center breathe"><a target="_blank" class="btn btn-success" href="https://discord.gg/jjqzBA4">naar Discord kanaal &rarr;</a></p>
+                    <p class="center breathe"><a target="_blank" class="btn btn-success" href="https://discord.gg/Z9KS9Ha">naar Discord kanaal &rarr;</a></p>
                     <p>Online coding sessies via <a href="https://zoom.us/download#client_4meeting">zoom.us</a> worden in dit kanaal georganiseerd.</p>
                 </div>
             </div>
