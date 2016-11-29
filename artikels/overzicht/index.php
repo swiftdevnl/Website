@@ -21,6 +21,8 @@ foreach($articledirnames as $articledirname) {
 	
 	$contentfn = "../".$articledirname."/content.html";
 
+	if (!file_exists($contentfn)) continue; // Als bestand met content niet bestaat, dit artikel overslaan.
+	
 	$content = file_get_contents($contentfn);
 	$lines = explode("\n", $content);
 
