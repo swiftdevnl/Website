@@ -134,6 +134,21 @@ body.artikel .col-center {
 	max-width: 30em;
 	}
 
+div.artikel h2 {
+	font-size: 150%;
+	margin-bottom: 0;
+	margin-top: 1.5em;
+	}
+
+div.artikel p.datum {
+	font-size: 80%;
+	color: #888;
+	margin: 0;
+	}
+
+div.artikel p.ankeiler {
+	}
+
 @media (min-width: 992px) {            
 	.squeeze-left {
 	    padding: 0 1em 0 0;

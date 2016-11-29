@@ -26,7 +26,7 @@
             <div class="col-center">
             	<h1><a href="/"><img src="../../img/logo75.png" alt="<?= $contenttitle ?>" /></a></h1>
 				<?= $content ?>
-				<p><a href="/">&larr; terug</a></p>
+				<p><a href="/">&larr; home</a></p>
             </div>
         </div>
         
