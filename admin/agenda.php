@@ -69,13 +69,17 @@ if (array_key_exists("submit",$_POST)) {
     </style>    
 </head>
 <body>
+    <div class="top container-fluid">
+    	<div class="container">
+	        <div class="row">
+	            <h1><a href="/"><img src="../img/logo75.png" alt="SwiftDev logo" /></a></h1>
+	        </div>
+		</div>
+	</div>
+
     <div class="container">
         <div class="row">
-            <h1><a href="/"><img src="../img/logo75.png" alt="SwiftDev.nl" /></a></h1>
 			<h1>Agenda beheer</h1>
-        </div>
-        
-        <div class="row">
 			<form class="agenda" action="" method="post" accept-charset="utf-8">
 				<h3>Zondagmiddag coding sessie</h3>
 				<p>Datum <input name="zondagdatum" type="text" size="10" placeholder="20 nov" value="<?= $agenda->zondagdatum ?>"> (bijvoorbeeld: 20 nov)</p>

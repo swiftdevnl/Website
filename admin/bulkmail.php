@@ -99,9 +99,16 @@ if (array_key_exists("submit",$_POST)) {
     </style>    
 </head>
 <body>
+    <div class="top container-fluid">
+    	<div class="container">
+	        <div class="row">
+	            <h1><a href="/"><img src="../img/logo75.png" alt="SwiftDev logo" /></a></h1>
+	        </div>
+		</div>
+	</div>
+
     <div class="container">
         <div class="row">
-            <h1><a href="/"><img src="../img/logo75.png" alt="SwiftDev.nl" /></a></h1>
 			<h1>Bulkmail</h1>
         </div>
         

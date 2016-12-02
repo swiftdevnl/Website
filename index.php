@@ -59,11 +59,15 @@ $linkfeed = array_slice($linkfeed, 0, 5);
     
 </head>
 <body>
+    <div class="top container-fluid">
+    	<div class="container">
+	        <div class="row">
+	            <h1><a href="/"><img src="img/logo75.png" alt="SwiftDev.nl" /></a></h1>
+	        </div>
+		</div>
+	</div>
+	
     <div class="container">
-        <div class="row">
-            <h1><a href="/"><img src="img/logo75.png" alt="SwiftDev.nl" /></a></h1>
-        </div>
-        
         <div class="row">
             <div class="col-md-4">
                 <div class="squeeze-left">

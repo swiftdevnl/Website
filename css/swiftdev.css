@@ -3,6 +3,14 @@ body, .form-control, .btn-default  {
 	background-color: #FDFDF9;
 	}
 
+div.top {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#87ceeb+0,87ceeb+100&1+0,0.1+77,0+100 */
+	background: -moz-linear-gradient(top, rgba(135,206,235,1) 0%, rgba(135,206,235,0.1) 77%, rgba(135,206,235,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(135,206,235,1) 0%,rgba(135,206,235,0.1) 77%,rgba(135,206,235,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(135,206,235,1) 0%,rgba(135,206,235,0.1) 77%,rgba(135,206,235,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87ceeb', endColorstr='#0087ceeb',GradientType=0 ); /* IE6-9 */
+	}
+
 h1.logo {
 	display: none;
 	}
