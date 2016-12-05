@@ -118,5 +118,35 @@
         "publicatiedatum": "2016-11-01", 
         "url": "https://github.com/raywenderlich/swift-algorithm-club",
         "titel": "De Swift Algorithm Club bevat allerlei algorithmen in Swift playgrounds"
+    },
+    {
+        "publicatiedatum": "2016-12-02", 
+        "url": "https://github.com/aschuch/StatefulViewController",
+        "titel": "ViewController met ingebouwde spinner en foutmelding"
+    },
+    {
+        "publicatiedatum": "2016-12-02", 
+        "url": "https://github.com/SebastianBoldt/Jelly",
+        "titel": "Grafische transities"
+    },    
+    {
+        "publicatiedatum": "2016-12-07", 
+        "url": "http://blog.stablekernel.com/how-to-prevent-memory-leaks-in-swift-closures",
+        "titel": "Voorkom geheugenlekken in closures"
+    },    
+    {
+        "publicatiedatum": "2016-12-09", 
+        "url": "https://medium.com/@_riteshhh/swift-snippet-1-c2d485028185#.1awz7axis",
+        "titel": "preferredStatusBarStyle tip icm. NavigationController"
+    },    
+    {
+        "publicatiedatum": "2016-12-05", 
+        "url": "https://uxplanet.org/optimistic-1000-34d9eefe4c05#.b5ln65uue",
+        "titel": "Optimistische user-interfaces"
+    },
+    {
+        "publicatiedatum": "2016-12-02", 
+        "url": "https://makeappicon.com/ios10icon",
+        "titel": "Online icon resizer"
     }
 ]

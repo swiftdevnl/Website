@@ -73,7 +73,7 @@ $linkfeed = array_slice($linkfeed, 0, 5);
                 <div class="squeeze-left">
                     <h2>SwiftDev.nl</h2>
                     <p>...is een <em>online Nederlandstalige community</em> van personen die iOS apps willen maken, en dat samen doen is gezelliger!</p>
-                    <p class="center breathe"><a target="_blank" class="btn btn-success" href="https://discord.gg/Z9KS9Ha">naar Discord kanaal &rarr;</a></p>
+                    <p class="center breathe"><a target="_blank" class="btn btn-success" href="https://discord.gg/Z9KS9Ha">bezoek ons Discord chat-kanaal &rarr;</a></p>
                     <p>Online coding sessies via <a href="https://zoom.us/download#client_4meeting">zoom.us</a> worden in dit kanaal georganiseerd.</p>
                 </div>
             </div>
@@ -147,12 +147,13 @@ $linkfeed = array_slice($linkfeed, 0, 5);
 
             <div class="col-md-4">
                 <div class="squeeze-right">
-                    <h2>Over SwiftDev</h2>
-                    <p>
-                        Wil jij in het Nederlands met Swift ook iOS apps leren programmeren,
-                        apps ontwerpen of samen met anderen apps ontwikkelen?
-                        <a href="artikels/over">Lees dan verder&hellip;</a>
-                    </p>
+                    <h2>Artikels</h2>
+					
+					<p>December brengt enige wijzigingen voor SwiftDev: 
+					   de website in een nieuw jasje, prominente links naar het Discord-kanaal
+					   en de videos, de agenda prijkt bovenaan.
+                       <a href="artikels/bewogen-maand">Lees verder&hellip;</a>
+					</p>
                     
                     <p>
                         Voor wie kennis wil maken met Swift, app-ontwikkeling en andere leden bezoekt wekelijks
