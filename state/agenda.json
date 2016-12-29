@@ -1,11 +1,11 @@
 {
-    "zondagdatum": "4 dec",
-    "zondagpunt1": "Ad-hoc aangebrachte onderwerpen",
-    "zondagpunt2": "Relationeel databaseontwerp",
+    "zondagdatum": "1 jan",
+    "zondagpunt1": "Wat zich zoal aandient",
+    "zondagpunt2": "",
     "zondagpunt3": "",
-    "woensdagdatum": "30 nov",
-    "woensdagpunt1": "SizeClasses in Xcode8",
-    "woensdagpunt2": "HTML files in je app-bundle tonen in Webview, incl. plaatjes en links",
-    "woensdagpunt3": "Welke files zitten er in de app bundle?",
+    "woensdagdatum": "28 dec",
+    "woensdagpunt1": "Notifications in Swift3",
+    "woensdagpunt2": "",
+    "woensdagpunt3": "",
     "submit": "Bewaar"
 }

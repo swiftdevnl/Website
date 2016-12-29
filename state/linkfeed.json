@@ -148,5 +148,20 @@
         "publicatiedatum": "2016-12-02", 
         "url": "https://makeappicon.com/ios10icon",
         "titel": "Online icon resizer"
+    },
+    {
+        "publicatiedatum": "2016-12-27", 
+        "url": "https://cocoacasts.com/using-fatal-errors-to-add-clarity-and-elegance-to-swift/",
+        "titel": "Gebruik 'guard' voor onverwachte situaties"
+    },    
+    {
+        "publicatiedatum": "2016-12-27", 
+        "url": "https://www.raywenderlich.com/149412/8-free-apple-game-framework-tutorials-updated-swift-3",
+        "titel": "8 gratis tutorials voor Apple game-frameworks bijgewerkt"
+    },
+    {
+        "publicatiedatum": "2016-12-27", 
+        "url": "https://medium.com/swiftindia/build-a-custom-universal-framework-on-ios-swift-549c084de7c8#.5xh20mi1w",
+        "titel": "Bouw je eigen custom framework"
     }
 ]
