@@ -54,6 +54,7 @@ $linkfeed = array_slice($linkfeed, 0, 5);
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<meta name="google-site-verification" content="-XNQ8HBmSTScbjIm63Pz0MZpdb--V3H3yhJ5q29Xg7g" owner="Aad" />
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
