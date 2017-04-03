@@ -88,7 +88,7 @@ $linkfeed = array_slice($linkfeed, 0, 5);
                 <div class="squeeze-middle">
                     <h2>Online meetings</h2>
                     <ul class="unindented">
-                    <li>Elke zondagmiddag live coding sessie</li>
+                    <li>Elke zondagavond live coding sessie</li>
                     <li>Tweewekelijks woensdagavond hangout</li>
                     <li><a href="artikels/videos">Bekijk videos</a> van vorige hangouts</li>
                     <li>Blijf op de hoogte via email:</li>
@@ -108,7 +108,7 @@ $linkfeed = array_slice($linkfeed, 0, 5);
             <div class="col-md-4">
                 <div class="squeeze-right">
                     <h2>Agenda</h2>
-                    <p>Zondag <?php if (!empty($agenda->zondagdatum)) echo($agenda->zondagdatum); ?> 14:00, <a href="https://zoom.us/j/456434309" title="Live coding sessie">zoom &rarr;</a></p>
+                    <p>Zondag <?php if (!empty($agenda->zondagdatum)) echo($agenda->zondagdatum); ?> 20:00, <a href="https://zoom.us/j/456434309" title="Live coding sessie">zoom &rarr;</a></p>
                     <ul class="indented">
 						<?php if (!empty($agenda->zondagpunt1)) echo("<li>".$agenda->zondagpunt1."</li>"); ?>
 						<?php if (!empty($agenda->zondagpunt2)) echo("<li>".$agenda->zondagpunt2."</li>"); ?>
@@ -127,16 +127,18 @@ $linkfeed = array_slice($linkfeed, 0, 5);
         <div class="row gasp">
             <div class="col-md-4">
                 <div class="squeeze-left">
-                    <h2>Link feed</h2>
-                    <p>Interessante internationale artikelen en blogpostings, verzameld door Digitist.</p>
-                    <ul class="unindented">
-					    <?php
-						foreach($linkfeed as $link) {
-                            echo "<li>$link->titel <a date=\"$link->publicatiedatum\" href=\"$link->url\" target=\"_blank\">lees&hellip;</a></li>";
-							}
-						?>
-                    </ul>
-                    <p><a href="linkfeed.php">meer&hellip;</a></p>
+                    <h2>Cursus voor beginners</h2>
+					<p>Wij hebben een aantal videos speciaal geschikt voor beginnende app-programmeurs verzameld.
+					Laat je mailadres achter en wij sturen je het materiaal.</p>
+                    <form class="subscribe" method="post" action="beginners.php" accept-charset="utf-8">
+                        <div class="input-group">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="jouw email adres" required>
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"> ja! stuur mij die video's </button>
+                            </span>
+                        </div><!-- /input-group -->                    
+                    </form>
+					<p>Bij problemen en vragen helpen wij je verder in een gezamelijke zoomsessie. Dit alles is geheel gratis!</p>
                 </div>
             </div>
 
@@ -147,28 +149,25 @@ $linkfeed = array_slice($linkfeed, 0, 5);
                     <p><a href="artikels/quotespin">Quote Spin</a> van Pieter Velghe</p>
                     <p><a href="artikels/logsave">LogSave</a> van Jan Pollaert</p>
                     <p><a href="artikels/horseranking">Horse Ranking</a> van Michel Kapelle</p>
-					<p><a href="/admin">admin...</a>
+					<hr>
+					<h3>Divers</h3>
+                    <p><a href="artikels/overzicht">Artikel overzicht&hellip;</a>
+					<p><a href="/admin">Admin&hellip;</a>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="squeeze-right">
-                    <h2>Artikels</h2>
-					
-					<p>December brengt enige wijzigingen voor SwiftDev: 
-					   de website in een nieuw jasje, prominente links naar het Discord-kanaal
-					   en de videos, de agenda prijkt bovenaan.
-                       <a href="artikels/bewogen-maand">Lees verder&hellip;</a>
-					</p>
-                    
-                    <p>
-                        Voor wie kennis wil maken met Swift, app-ontwikkeling en andere leden bezoekt wekelijks
-                        onze <em>online meetings</em>.
-						Elke week zondagmiddag is er in principe een <a href="artikels/live-coding">live coding</a> sessie,
-						en elke twee weken een <a href="artikels/hangouts">hangout</a> op woensdagavond.
-                    </p>
-
-                    <p><a href="artikels/overzicht">meer artikels&hellip;</a>
+                    <h2>Link feed</h2>
+                    <p>Interessante internationale artikelen en blogpostings, verzameld door leden.</p>
+                    <ul class="unindented">
+					    <?php
+						foreach($linkfeed as $link) {
+                            echo "<li>$link->titel <a date=\"$link->publicatiedatum\" href=\"$link->url\" target=\"_blank\">lees&hellip;</a></li>";
+							}
+						?>
+                    </ul>
+                    <p><a href="linkfeed.php">meer&hellip;</a></p>
                 </div>
             </div>
         </div><!-- .row -->

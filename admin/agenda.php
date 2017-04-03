@@ -81,7 +81,7 @@ if (array_key_exists("submit",$_POST)) {
         <div class="row">
 			<h1>Agenda beheer</h1>
 			<form class="agenda" action="" method="post" accept-charset="utf-8">
-				<h3>Zondagmiddag coding sessie</h3>
+				<h3>Zondagavond coding sessie</h3>
 				<p>Datum <input name="zondagdatum" type="text" size="10" placeholder="20 nov" value="<?= $agenda->zondagdatum ?>"> (bijvoorbeeld: 20 nov)</p>
 				<p>Punt 1 <input name="zondagpunt1" type="text" size="30" value="<?= $agenda->zondagpunt1 ?>"></p>
 				<p>Punt 2 <input name="zondagpunt2" type="text" size="30" value="<?= $agenda->zondagpunt2 ?>"></p>
