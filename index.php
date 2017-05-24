@@ -95,7 +95,7 @@ $linkfeed = array_slice($linkfeed, 0, 5);
                     </ul>
                     <form class="subscribe" method="post" action="abonneer.php" accept-charset="utf-8">
                         <div class="input-group">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="jouw email adres" required>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="je email adres" required>
                             <span class="input-group-btn">
                                 <button class="btn btn-default" type="submit"> abonneer </button>
                             </span>
@@ -114,7 +114,7 @@ $linkfeed = array_slice($linkfeed, 0, 5);
 						<?php if (!empty($agenda->zondagpunt2)) echo("<li>".$agenda->zondagpunt2."</li>"); ?>
 						<?php if (!empty($agenda->zondagpunt3)) echo("<li>".$agenda->zondagpunt3."</li>"); ?>
                     </ul>
-                    <p>Woensdag <?php if (!empty($agenda->woensdagdatum)) echo($agenda->woensdagdatum); ?> 19:30, <a href="https://zoom.us/j/245766538" title="Hangout">zoom &rarr;</a></p>
+                    <p>Woensdag <?php if (!empty($agenda->woensdagdatum)) echo($agenda->woensdagdatum); ?> 20:00, <a href="https://zoom.us/j/245766538" title="Hangout">zoom &rarr;</a></p>
                     <ul class="indented">
  						<?php if (!empty($agenda->woensdagpunt1)) echo("<li>".$agenda->woensdagpunt1."</li>"); ?>
 						<?php if (!empty($agenda->woensdagpunt2)) echo("<li>".$agenda->woensdagpunt2."</li>"); ?>
@@ -132,9 +132,9 @@ $linkfeed = array_slice($linkfeed, 0, 5);
 					Laat je mailadres achter en wij sturen je het materiaal.</p>
                     <form class="subscribe" method="post" action="beginners.php" accept-charset="utf-8">
                         <div class="input-group">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="jouw email adres" required>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="je email adres" required>
                             <span class="input-group-btn">
-                                <button class="btn btn-default" type="submit"> ja! stuur mij die video's </button>
+                                <button class="btn btn-default" type="submit"> ja! stuur me de videos </button>
                             </span>
                         </div><!-- /input-group -->                    
                     </form>
