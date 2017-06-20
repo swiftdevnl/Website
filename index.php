@@ -127,37 +127,6 @@ $linkfeed = array_slice($linkfeed, 0, 5);
         <div class="row gasp">
             <div class="col-md-4">
                 <div class="squeeze-left">
-                    <h2>Cursus voor beginners</h2>
-					<p>Wij hebben een aantal videos speciaal geschikt voor beginnende app-programmeurs verzameld.
-					Laat je mailadres achter en wij sturen je het materiaal.</p>
-                    <form class="subscribe" method="post" action="beginners.php" accept-charset="utf-8">
-                        <div class="input-group">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="je email adres" required>
-                            <span class="input-group-btn">
-                                <button class="btn btn-default" type="submit"> ja! stuur me de videos </button>
-                            </span>
-                        </div><!-- /input-group -->                    
-                    </form>
-					<p>Bij problemen en vragen helpen wij je verder in een gezamelijke zoomsessie. Dit alles is geheel gratis!</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="squeeze-middle">
-                    <h2>Apps van leden</h2>
-                    <p>Een aantal leden hebben apps gemaakt die ondertussen in de AppStore staan.</p>
-                    <p><a href="artikels/quotespin">Quote Spin</a> van Pieter Velghe</p>
-                    <p><a href="artikels/logsave">LogSave</a> van Jan Pollaert</p>
-                    <p><a href="artikels/horseranking">Horse Ranking</a> van Michel Kapelle</p>
-					<hr>
-					<h3>Divers</h3>
-                    <p><a href="artikels/overzicht">Artikel overzicht&hellip;</a>
-					<p><a href="/admin">Admin&hellip;</a>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="squeeze-right">
                     <h2>Link feed</h2>
                     <p>Interessante internationale artikelen en blogpostings, verzameld door leden.</p>
                     <ul class="unindented">
@@ -170,6 +139,25 @@ $linkfeed = array_slice($linkfeed, 0, 5);
                     <p><a href="linkfeed.php">meer&hellip;</a></p>
                 </div>
             </div>
+
+            <div class="col-md-4">
+                <div class="squeeze-middle">
+                    <h2>Apps van leden</h2>
+                    <p>Een aantal leden hebben apps gemaakt die ondertussen in de AppStore staan.</p>
+                    <p><a href="artikels/quotespin">Quote Spin</a> van Pieter Velghe</p>
+                    <p><a href="artikels/logsave">LogSave</a> van Jan Pollaert</p>
+                    <p><a href="artikels/horseranking">Horse Ranking</a> van Michel Kapelle</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="squeeze-right">
+                    <h2>Divers</h2>
+                    <p><a href="artikels/overzicht">Artikel overzicht&hellip;</a>
+					<p><a href="/admin">Admin&hellip;</a>
+                </div>
+            </div>
+
         </div><!-- .row -->
 
 
@@ -181,7 +169,7 @@ $linkfeed = array_slice($linkfeed, 0, 5);
         <p class="center">
             Content door Erwin Abrahamse, Rudy Wouters en Adri Mathlener &bullet;
             SwiftDev.nl is lente 2016 opgericht door Erwin Schuurman, Erwin Abrahamse en Rudy Wouters &bullet;
-            Website door Michiel Overtoom
+            Website door Michiel Overtoom, motoom@xs4ll.nl
         </p>
     </div>
     -->
