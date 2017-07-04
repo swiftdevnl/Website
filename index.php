@@ -88,8 +88,10 @@ $linkfeed = array_slice($linkfeed, 0, 5);
                 <div class="squeeze-middle">
                     <h2>Online meetings</h2>
                     <ul class="unindented">
-                    <li>Elke zondagavond live coding sessie</li>
+                    <!--
+					<li>Elke zondagavond live coding sessie</li>
                     <li>Tweewekelijks woensdagavond hangout</li>
+					-->
                     <li><a href="artikels/videos">Bekijk videos</a> van vorige hangouts</li>
                     <li>Blijf op de hoogte via email:</li>
                     </ul>
@@ -108,6 +110,11 @@ $linkfeed = array_slice($linkfeed, 0, 5);
             <div class="col-md-4">
                 <div class="squeeze-right">
                     <h2>Agenda</h2>
+					<p>Op dit moment staan er geen bijeenkomsten gepland.</p>
+					<p>
+					Je kunt natuurlijk altijd iets spontaans organiseren via
+					het <a href="https://discord.gg/Z9KS9Ha">discord chat-kanaal</a>.</p>
+					<!--
                     <p>Zondag <?php if (!empty($agenda->zondagdatum)) echo($agenda->zondagdatum); ?> 20:00, <a href="https://zoom.us/j/456434309" title="Live coding sessie">zoom &rarr;</a></p>
                     <ul class="indented">
 						<?php if (!empty($agenda->zondagpunt1)) echo("<li>".$agenda->zondagpunt1."</li>"); ?>
@@ -120,6 +127,7 @@ $linkfeed = array_slice($linkfeed, 0, 5);
 						<?php if (!empty($agenda->woensdagpunt2)) echo("<li>".$agenda->woensdagpunt2."</li>"); ?>
 						<?php if (!empty($agenda->woensdagpunt3)) echo("<li>".$agenda->woensdagpunt3."</li>"); ?>
                     </ul>
+					-->
                 </div>
             </div>
         </div><!-- .row -->
